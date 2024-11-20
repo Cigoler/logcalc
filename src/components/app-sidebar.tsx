@@ -3,8 +3,8 @@ import {
   Toilet,
   BookOpen,
   Book,
-  SquareBottomDashedScissors,
   Settings,
+  Clock,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -29,7 +29,16 @@ const data = {
       title: "Calculator",
       url: "/calculator",
       icon: Toilet,
-      isActive: true,
+    },
+    {
+      title: "Shifts",
+      url: "/shifts",
+      icon: Clock,
+    },
+    {
+      title: "Logbook",
+      url: "/logbook",
+      icon: Book,
     },
     {
       title: "Settings",
@@ -37,19 +46,8 @@ const data = {
       icon: Settings,
     },
     {
-      title: "Logbook",
-      url: "#",
-      icon: Book,
-      items: [
-        {
-          title: "Search",
-          url: "#",
-        },
-      ],
-    },
-    {
       title: "Documentation",
-      url: "#",
+      url: "/docs",
       icon: BookOpen,
     },
   ],
@@ -64,7 +62,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton size="lg" asChild>
               <a href="/">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <SquareBottomDashedScissors className="size-5" />
+                  <Toilet className="size-5" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
                   <span className="truncate font-semibold">LogCalc</span>

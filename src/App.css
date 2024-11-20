@@ -80,3 +80,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.prose {
+  @apply max-w-full;
+} 
