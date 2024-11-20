@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { useLogbook } from '@/hooks/use-logbook';
-import { LogbookEntry } from '@/types/logbook';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Plus, Search, Filter } from 'lucide-react';
+import { Plus, Search } from 'lucide-react';
 import { LogbookEntryForm } from './logbook-entry-form';
 import { LogbookEntryCard } from './logbook-entry-card';
 import { Badge } from '@/components/ui/badge';
@@ -56,7 +54,7 @@ export function LogbookPage() {
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle>Logbook</CardTitle>
-          <LogbookEntryForm onSubmit={addEntry}>
+          <LogbookEntryForm onSubmit={(entry) => addEntry({ ...entry, images: [] })}>
             <Button>
               <Plus className="mr-2 h-4 w-4" />
               New Entry

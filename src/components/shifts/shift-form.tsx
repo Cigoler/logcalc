@@ -19,7 +19,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { addHours, format } from 'date-fns';
+import { addHours } from 'date-fns';
 
 interface ShiftFormProps {
   onSubmit: (shift: Omit<Shift, 'id'>) => void;
@@ -59,6 +59,7 @@ export function ShiftForm({ onSubmit, initialValues, children }: ShiftFormProps)
       targetLogs: Number(targetLogs),
       diameterId,
       notes,
+      entries: [],
     });
     setOpen(false);
   };

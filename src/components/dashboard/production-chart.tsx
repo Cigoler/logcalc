@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { LogEntry } from '@/types/log-entry';
-import { useSettings } from '@/hooks/use-settings';
 import { format } from 'date-fns';
 import {
   Area,
@@ -19,8 +18,6 @@ interface ProductionChartProps {
 }
 
 export function ProductionChart({ entries }: ProductionChartProps) {
-  const { settings } = useSettings();
-
   const chartData = useMemo(() => {
     // Group entries by date
     const groupedByDate = entries.reduce((acc, entry) => {

@@ -1,5 +1,3 @@
-import { LogEntry } from './log-entry';
-
 export interface Shift {
   id: string;
   startDateTime: string; // ISO string
