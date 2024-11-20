@@ -2,7 +2,7 @@ import { useSettings } from '@/hooks/use-settings';
 import { DiameterForm } from './diameter-form';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Pencil, Trash2 } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 
 export function SettingsPage() {
   const { settings, addDiameter, updateDiameter, deleteDiameter, resetToDefaults } = useSettings();
@@ -41,7 +41,7 @@ export function SettingsPage() {
                       })
                     }
                     initialValues={diameter}
-                    buttonText={<Pencil className="h-4 w-4" />}
+                    buttonText="Edit"
                   />
                   <Button
                     variant="destructive"

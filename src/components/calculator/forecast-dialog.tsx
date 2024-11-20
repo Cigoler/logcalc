@@ -23,7 +23,7 @@ interface ForecastDialogProps {
   constant: number;
 }
 
-export function ForecastDialog({ speed, logsPerMinute, diameter, constant }: ForecastDialogProps) {
+export function ForecastDialog({ speed, logsPerMinute, diameter }: ForecastDialogProps) {
   // Calculate forecast for 12 hours
   const hours = Array.from({ length: 12 }, (_, i) => i + 1);
   const logsPerHour = logsPerMinute * 60;

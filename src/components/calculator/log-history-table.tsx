@@ -1,6 +1,6 @@
 import { useSettings } from '@/hooks/use-settings';
 import { LogEntry } from '@/types/log-entry';
-import { formatDate } from '@/utils/format';
+// import { formatDate } from '@/utils/format';
 import { Button } from '@/components/ui/button';
 import { Trash2 } from 'lucide-react';
 import {

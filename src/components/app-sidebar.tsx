@@ -2,7 +2,6 @@ import * as React from "react"
 import {
   Toilet,
   BookOpen,
-  Settings2,
   Book,
   SquareBottomDashedScissors,
   Settings,
