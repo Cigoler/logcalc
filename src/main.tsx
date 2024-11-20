@@ -8,6 +8,8 @@ import Root from "./routes/root.tsx";
 import ErrorPage from "./error-page.tsx";
 import './App.css'
 import App from './App.tsx';
+import { Calculator } from './components/calculator/calculator.tsx';
+import { SettingsPage } from './components/settings/settings-page.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App />,
+      },
+      {
+        path: "/calculator",
+        element: <Calculator />,
+      },
+      {
+        path: "/settings",
+        element: <SettingsPage />,
       },
     ],
   },

@@ -5,6 +5,7 @@ import {
   Settings2,
   Book,
   SquareBottomDashedScissors,
+  Settings,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -27,23 +28,14 @@ const data = {
   navMain: [
     {
       title: "Calculator",
-      url: "#",
+      url: "/calculator",
       icon: Toilet,
       isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Actual Logs",
-          url: "#",
-        },
-        {
-          title: "Forecast",
-          url: "#",
-        },
-      ],
+    },
+    {
+      title: "Settings",
+      url: "/settings",
+      icon: Settings,
     },
     {
       title: "Logbook",
@@ -60,39 +52,6 @@ const data = {
       title: "Documentation",
       url: "#",
       icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "FAQ",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Material",
-          url: "#",
-        },
-      ],
     },
   ],
 }
